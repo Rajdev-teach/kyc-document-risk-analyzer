@@ -1,0 +1,16 @@
+doc_id,file_path,doc_type,expected_entities,risk_label,split,notes
+doc_001,data/raw/doc_001_passport.pdf,passport,"PERSON,DATE,GPE,ID_NUMBER",low,train,Synthetic; selectable text; no duplicates
+doc_002,data/raw/doc_002_bank_statement.pdf,bank_statement,"PERSON,ORG,MONEY,ID_NUMBER",low,train,Synthetic; selectable text; no duplicates
+doc_003,data/raw/doc_003_business_record.pdf,business_record,"PERSON,ORG,DATE,GPE",low,train,Synthetic; selectable text; no duplicates
+doc_004,data/raw/doc_004_passport.pdf,passport,"PERSON,DATE,GPE,ID_NUMBER",medium,train,Synthetic; selectable text; no duplicates
+doc_005,data/raw/doc_005_bank_statement.pdf,bank_statement,"PERSON,ORG,MONEY,ID_NUMBER",medium,train,Synthetic; selectable text; no duplicates
+doc_006,data/raw/doc_006_business_record.pdf,business_record,"PERSON,ORG,DATE,GPE",medium,train,Synthetic; selectable text; no duplicates
+doc_007,data/raw/doc_007_passport.pdf,passport,"PERSON,DATE,GPE,ID_NUMBER",high,train,Synthetic; selectable text; no duplicates
+doc_008,data/raw/doc_008_bank_statement.pdf,bank_statement,"PERSON,ORG,MONEY,ID_NUMBER",high,train,Synthetic; selectable text; no duplicates
+doc_009,data/raw/doc_009_business_record.pdf,business_record,"PERSON,ORG,DATE,GPE",high,train,Synthetic; selectable text; no duplicates
+doc_010,data/raw/doc_010_passport.pdf,passport,"PERSON,DATE,GPE,ID_NUMBER",low,validation,Synthetic; selectable text; no duplicates
+doc_011,data/raw/doc_011_bank_statement.pdf,bank_statement,"PERSON,ORG,MONEY,ID_NUMBER",medium,validation,Synthetic; selectable text; no duplicates
+doc_012,data/raw/doc_012_business_record.pdf,business_record,"PERSON,ORG,DATE,GPE",high,validation,Synthetic; selectable text; no duplicates
+doc_013,data/raw/doc_013_passport.pdf,passport,"PERSON,DATE,GPE,ID_NUMBER",low,test,Synthetic; selectable text; no duplicates
+doc_014,data/raw/doc_014_bank_statement.pdf,bank_statement,"PERSON,ORG,MONEY,ID_NUMBER",medium,test,Synthetic; selectable text; no duplicates
+doc_015,data/raw/doc_015_business_record.pdf,business_record,"PERSON,ORG,DATE,GPE",high,test,Synthetic; selectable text; no duplicates
