@@ -3,7 +3,7 @@ import re
 import unicodedata
 
 def remove_page_numbers(text: str) -> str:
-    return re.sub(r"(?i)(Page\s+\d+\s+of\s+\d+|-\s*\d+\s*-)", "", text)
+    return re.sub(r"(?im)^[ \t]*(?:Page\s+\d+\s+of\s+\d+|-\s*\d+\s*-)[ \t]*\r?$", "", text)
 
 def fix_hyphenated_newlines(text: str) -> str:
     return re.sub(r"(\w+)-\n(\w+)", r"\1\2", text)

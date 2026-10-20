@@ -7,6 +7,10 @@ from src.pipeline import analyze_document
 def test_cleaning_preserves_case_and_repairs_hyphen():
     assert clean_text("John doc-\nument\nPage 1 of 2") == "John document"
 
+def test_cleaning_preserves_identifiers_and_inline_page_references():
+    document = 'Account: ACCT-12345-XYZ\nSee Page 1 of 2 for details.\n- 3 -'
+    assert clean_text(document) == 'Account: ACCT-12345-XYZ\nSee Page 1 of 2 for details.'
+
 def test_regex_entities_normalized():
     entities=EntityExtractor().extract("Name: John Carter\nPassport ID: PUS1234567\nExpiry: 2029-04-10")
     assert {e["type"] for e in entities} >= {"PERSON","ID_NUMBER","DATE"}
